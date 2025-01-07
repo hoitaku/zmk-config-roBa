@@ -70,7 +70,7 @@
 &kp Q      &kp W         &kp E         &kp R                  &kp T                                           &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                  &kp G        &lt 6 QUESTION      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z      &kp X         &kp C         &kp V                  &kp B        &kp LG(LS(S))       &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 1 SPACE  &lt 3 LANG1         &kp BACKSPACE  &lt 1 ENTER                             &kp RSHFT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 1 SPACE  &lt 5 LANG1         &kp BACKSPACE  &lt 1 ENTER                             &kp RSHFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -116,10 +116,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &kp F7   &kp F8   &kp F9  &trans                       &trans  &trans  &trans  &trans  &trans
+&trans  &kp F4   &kp F5   &kp F6  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &kp F10  &kp F11  &trans  &trans  &trans      &kp DEL  &trans                          &trans
             >;
         };
 
