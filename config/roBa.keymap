@@ -146,7 +146,3 @@
         };
     };
 };
-
-// 設定したいレイヤー
-
-sensor-bindings = <&scroll_up_down>;
