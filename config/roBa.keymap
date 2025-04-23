@@ -130,7 +130,34 @@
             >;
         };
 
-j
+        mac_default_layer {
+            bindings = <
+&kp Q          &kp W      &kp E         &kp R                  &kp T                                        &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A          &kp S      &kp D         &kp F                  &kp G        &trans           &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z          &kp X      &kp C         &kp V                  &kp B        &mo 6            &trans         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_META  &kp LCTRL  &kp LEFT_ALT  &mt LSHIFT LANGUAGE_2  &lt 4 SPACE  &lt 5 LANG1      &kp BACKSPACE  &lt 2 ENTER                             &kp RSHFT
+            >;
+
+            sensor-bindings = <&scroll_down_up>;
+        };
+
+        mac_FUNCTION {
+            bindings = <
+&kp LEFT_PARENTHESIS  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET                       &kp INTERNATIONAL_3  &kp LT           &kp GT         &trans             &trans
+&kp AT                &kp DLLR          &kp PRCNT             &kp AMPS               &kp RIGHT_BRACKET  &trans      &trans  &kp LS(SEMI)         &mkp MB1         &kp PAGE_UP    &mkp MB2           &kp SQT
+&kp TILDE             &kp EXCL          &kp DOUBLE_QUOTES     &kp HASH               &kp FSLH           &trans      &trans  &kp LS(INT1)         &kp LC(PAGE_UP)  &kp PAGE_DOWN  &kp LC(PAGE_DOWN)  &kp SEMI
+&trans                &trans            &trans                &trans                 &trans             &trans      &trans  &trans                                                                  &trans
+            >;
+        };
+
+        mac_NUM {
+            bindings = <
+&kp TAB      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp GRAVE                          &trans  &trans          &trans          &trans           &trans
+&kp ESC      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp QUESTION   &trans      &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LS(SQT)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(EQUAL)  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans       &kp NUMBER_0  &trans        &trans        &trans         &trans      &trans  &trans                                                   &trans
+            >;
+        };
 
         SCROLL {
             bindings = <
