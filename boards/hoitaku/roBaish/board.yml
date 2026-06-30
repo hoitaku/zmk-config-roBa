@@ -1,0 +1,16 @@
+# boards/hoitaku/roBaish/board.yml
+# HWMv2 board metadata for roBaish (nRF52840)
+# Replace or expand fields as needed based on your board revisions and SoC details
+name: roBaish
+vendor: hoitaku
+description: "roBaish keyboard (ZMK) - HWMv2 board metadata for Zephyr 4.1"
+revisions:
+  - version: 1.0.0
+    default: true
+    soc: nrf52840
+    compatible:
+      - "nordic,nrf52840"
+    arch: arm
+supported:
+  - arch: arm
+    soc: nrf52840

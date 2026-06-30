@@ -1,0 +1,12 @@
+# board_defconfig for roBaish (nRF52840)
+# Keep minimal Kconfig flags; hardware-specific parameters are expressed in device tree overlay.
+CONFIG_ZMK_KEYBOARD_NAME="roBaish"
+CONFIG_BT_DEVICE_NAME="roBaish"
+
+# Basic ZMK features
+CONFIG_ZMK_POINTING=y
+CONFIG_ZMK_BLE=y
+
+# Enable drivers at Kconfig level; detailed parameters moved to device tree
+CONFIG_PMW3610=y
+CONFIG_EC11=y
