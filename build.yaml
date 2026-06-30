@@ -17,5 +17,5 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
-board: ["xiao_ble/zmk"]
+board: ["xiao_ble/nrf52840/zmk"]
 shield: ["roBa_R","roBa_L","settings_reset"]
