@@ -1,0 +1,44 @@
+/dts-v1/;
+/ {
+    aliases {
+        pmw3610 = &pmw3610_0;
+    };
+
+    pmw3610_0: pmw3610@0 {
+        /* Device tree node for PMW3610 optical sensor.
+           Verify the compatible string in upstream Zephyr/ZMK bindings
+           and adjust property names if necessary. */
+        compatible = "pmw,pmw3610";
+        reg = <0>;
+        status = "okay";
+
+        /* Example properties migrated from Kconfig into DT.
+           Confirm exact property names in the driver binding file. */
+        cpi = <400>;                    /* was CONFIG_PMW3610_CPI=400 */
+        cpi-divisor = <1>;              /* was CONFIG_PMW3610_CPI_DIVISOR=1 */
+        orientation = <180>;            /* was CONFIG_PMW3610_ORIENTATION_180=y */
+        scroll-tick = <16>;             /* was CONFIG_PMW3610_SCROLL_TICK=16 */
+        invert-x = <0>;                 /* was CONFIG_PMW3610_INVERT_X=n */
+        invert-scroll-x = <1>;          /* was CONFIG_PMW3610_INVERT_SCROLL_X=y */
+        run-downshift-time-ms = <3264>; /* was CONFIG_PMW3610_RUN_DOWNSHIFT_TIME_MS=3264 */
+        rest1-sample-time-ms = <20>;    /* was CONFIG_PMW3610_REST1_SAMPLE_TIME_MS=20 */
+        automouse-timeout-ms = <700>;   /* was CONFIG_PMW3610_AUTOMOUSE_TIMEOUT_MS=700 */
+
+        /* polling-rate property name depends on driver; adjust if required */
+        polling-rate = <125>;
+    };
+
+    /* Encoder nodes match JSON names. They are disabled by default because
+       the JSON indicated enabled: false. Enable by setting status = "okay" */
+    encoder_left: encoder_left {
+        compatible = "alps,ec11";
+        label = "encoder_left";
+        status = "disabled";
+    };
+
+    encoder_right: encoder_right {
+        compatible = "alps,ec11";
+        label = "encoder_right";
+        status = "disabled";
+    };
+};
